@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration monitorInterval="1" status="ERROR"
+	strict="true" name="Log4j2Config">
+	<Properties>
+		<!--<Property name="logbasedir">${bundle:application:log4j.logBaseDir}</Property> -->
+		<Property name="log.layout">[%d{yy-MM-dd HH:mm:ss,SSS}] %-5p - %m%n
+		</Property>
+	</Properties>
+
+
+	<Appenders>
+		<Appender type="Console" name="CONSOLE_APPENDER">
+			<Target>SYSTEM_OUT</Target>
+			<Layout type="PatternLayout" pattern="${log.layout}" />
+		</Appender>
+	</Appenders>
+
+	<Loggers>
+		<Root level="info">
+			<AppenderRef ref="CONSOLE_APPENDER" />
+		</Root>
+	</Loggers>
+</Configuration>
