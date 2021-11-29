@@ -82,7 +82,7 @@ stop_application() {
 }
 start() {
     start_application
-    health_check
+#    health_check
 }
 stop() {
     stop_application

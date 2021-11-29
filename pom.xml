@@ -12,7 +12,7 @@
 	<groupId>com.alibaba.csp.switchconfig</groupId>
 	<artifactId>demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ahas-switch-sdk-demo</name>
+	<name>switch-demo</name>
 	<description>ahas switch Demo project for Spring Boot</description>
 
 	<properties>
@@ -79,11 +79,14 @@
 	</dependencies>
 
 	<build>
-		<finalName>ahas-switch-sdk-demo</finalName>
+		<finalName>switch-demo</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<finalName>switch-demo</finalName>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
